@@ -1,67 +1,77 @@
 /*
-	Arcana by HTML5 UP
+	Miniport by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Form */
+/* Basic */
 
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	textarea {
+	form input[type=text],
+	form input[type=password],
+	form select,
+	form textarea {
 		position: relative;
 		-ms-behavior: url("assets/js/ie/PIE.htc");
 	}
 
-/* Image */
-
-	.image {
-		-ms-behavior: url("assets/js/ie/PIE.htc");
-	}
-
-		.image img {
-			position: relative;
-			-ms-behavior: url("assets/js/ie/PIE.htc");
-		}
-
-/* Icon */
-
-	.icon.major {
-		position: relative;
-		-ms-behavior: url("assets/js/ie/PIE.htc");
-	}
-
-/* Button */
-
+	input[type="button"],
 	input[type="submit"],
 	input[type="reset"],
-	input[type="button"],
+	button,
 	.button {
 		position: relative;
 		-ms-behavior: url("assets/js/ie/PIE.htc");
 	}
 
-/* Box */
+/* Section/Article */
 
-	.box.post .inner {
-		margin-left: 35%;
+	section > .last-child,
+	article > .last-child,
+	section.last-child,
+	article.last-child {
+		margin-bottom: 0;
 	}
 
-/* Dropotron */
+/* Box */
 
-	.dropotron {
+	.box {
+		border: solid 1px #ddd;
+	}
+
+/* List */
+
+	ul.social li a {
+		position: relative;
+		top: 0 !important;
+		overflow: hidden;
 		-ms-behavior: url("assets/js/ie/PIE.htc");
 	}
 
-/* Banner */
+		ul.social li a:before {
+			background: none;
+		}
 
-	#banner {
-		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
+/* Wrappers */
+
+	.wrapper {
+		border-top: solid 1px #ddd;
 	}
 
-/* Wrapper */
+/* Nav */
 
-	.wrapper.style2 {
-		background: #fdfdfd url("images/bg01.png");
+	#nav a {
+		position: relative;
+		-ms-behavior: url("assets/js/ie/PIE.htc");
 	}
+
+/* Articles */
+
+	#top .image {
+		position: relative;
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+		#top .image img {
+			position: relative;
+			-ms-behavior: url("assets/js/ie/PIE.htc");
+		}
